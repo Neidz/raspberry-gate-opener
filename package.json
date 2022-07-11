@@ -1,0 +1,11 @@
+{
+  "name": "raspberry-gate-opener",
+  "description": "it's script running on raspberry pi that opens gate my dude, name says it all",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "onoff": "^6.0.3"
+  }
+}
