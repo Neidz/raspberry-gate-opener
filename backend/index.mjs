@@ -16,8 +16,8 @@ app.get('/open', (req, res)=> {
     
     // pulling pin high closes relay which acts like a button
     relay.writeSync(1);
-    // after 0.5 sec pin is pulled low opening relay
-    setTimeout(()=> relay.writeSync(0), 500);
+    // after 1.5 sec pin is pulled low opening relay
+    setTimeout(()=> relay.writeSync(0), 1500);
 })
 
 app.get('/status', (req, res)=> {

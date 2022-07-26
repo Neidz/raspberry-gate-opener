@@ -1,0 +1,8 @@
+{
+  "short_name": "Raspbery gate opener",
+  "name": "Raspberry gate opener",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
