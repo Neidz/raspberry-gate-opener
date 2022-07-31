@@ -4,19 +4,24 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "pepe512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     },
     {
-      "src": "logo192.png",
+      "src": "pepe270.png",
+      "type": "image/png",
+      "sizes": "270x270"
+    },
+    {
+      "src": "pepe192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "pepe180.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "180x180"
     }
   ],
   "display": "standalone",
