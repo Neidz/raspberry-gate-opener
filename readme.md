@@ -1,4 +1,4 @@
-<h2>Project allowing everyone on local network to use remote controller for a gate opener</h1>
+<h2>Project allowing everyone on local network to use remote gate controller from app</h1>
 
 <h3>Frontend</h3>
 <p>React project with PWA functionality checking status of raspberry pi every 3 seconds</p>
