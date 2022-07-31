@@ -3,7 +3,9 @@ import "./actualContent.scss";
 
 const ActualContent: FC = () => {
     const [raspberryStatus, setRaspberryStatus] = useState<"alive" | "disconnected" | "checking">("checking");
-    const [openingStatus, setOpeningStatus] = useState<"open the gate" | "opening" | "try again?">("open the gate");
+    const [openingStatus, setOpeningStatus] = useState<"open/close the gate" | "working" | "try again?">(
+        "open/close the gate"
+    );
 
     const checkStatus = async () => {
         const controller = new AbortController();
@@ -26,7 +28,12 @@ const ActualContent: FC = () => {
             const response = await fetch("http://192.168.1.84:8080/open");
             const responseJson = await response.json();
 
-            responseJson === "opening" ? setOpeningStatus("opening") : setOpeningStatus("try again?");
+            if (responseJson === "opening") {
+                setOpeningStatus("working");
+                setTimeout(() => setOpeningStatus("open/close the gate"), 3000);
+            } else {
+                setOpeningStatus("try again?");
+            }
         } catch (err: unknown) {
             setOpeningStatus("try again?");
             console.log(err);

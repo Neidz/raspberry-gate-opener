@@ -4,22 +4,22 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "pepe512.png",
+      "src": "door_kick512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "pepe270.png",
+      "src": "door_kick270.png",
       "type": "image/png",
       "sizes": "270x270"
     },
     {
-      "src": "pepe192.png",
+      "src": "door_kick192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "pepe180.png",
+      "src": "door_kick180.png",
       "type": "image/png",
       "sizes": "180x180"
     }
