@@ -4,7 +4,6 @@ import {Gpio} from "onoff";
 
 const app = express();
 app.use(cors());
-app.use(cors())
 const port = 8080;
 
 // relay signal pin is connected to GPIO4 on raspberry pi, it's set as output because it's only used for sending signal, it's not used for reading
