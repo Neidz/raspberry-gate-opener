@@ -22,6 +22,13 @@ app.get('/open', (req, res)=> {
     setTimeout(()=> relay.writeSync(0), 2000);
 })
 
+app.get('/close', (req, res)=> {
+    res.status(200).json('closing... or opening, no idea');
+    
+    relay.writeSync(1);
+    setTimeout(()=> relay.writeSync(0), 2000);
+})
+
 app.get('/status', (req, res)=> {
     res.status(200).json('alive');
 })

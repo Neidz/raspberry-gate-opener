@@ -1,9 +1,7 @@
-<h2>Project allowing everyone on local network to use remote gate controller from app</h1>
-
-<a href="https://raspberry-gate-opener.netlify.app/"><h3>Link to app</h3></a>
+<h2>Project allowing everyone on local network to use remote gate controller from local website</h1>
 
 <h3>Frontend</h3>
-<p>React project with PWA functionality checking status of raspberry pi every 3 seconds allowing user to send request that opens/closes the gate through raspberry pi</p>
+<p>React project with checking status of raspberry pi every 3 seconds allowing user to send request that opens/closes the gate through raspberry pi</p>
 
 <h3>Backend</h3>
 <p>Node/express app controlling gpio pins on raspberry pi that also allows checking status of connection from frontend</p>
